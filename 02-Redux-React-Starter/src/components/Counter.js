@@ -1,7 +1,17 @@
 import classes from "./Counter.module.css";
-import { UseSelector, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const Counter = () => {
+  // dispatch function, a function which we can call, which will dispatch an action against our Redux store.
+  const dispatch = useDispatch();
+
+  const incrementHandler = () => {
+    dispatch({ type: "increment" });
+  };
+  const decrementHandler = () => {
+    dispatch({ type: "decrement" });
+  };
+
   // NOTES
   // When you use use selector, React Redux will automatically set up a subscription to the Redux store for this component.
 
@@ -15,6 +25,10 @@ const Counter = () => {
     <main className={classes.counter}>
       <h1>Redux Counter</h1>
       <div className={classes.value}>{counter}</div>
+      <div className="counter">
+        <button onClick={incrementHandler}>Increment</button>
+        <button onClick={decrementHandler}>Decrement</button>
+      </div>
       <button onClick={toggleCounterHandler}>Toggle Counter</button>
     </main>
   );
