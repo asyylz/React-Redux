@@ -6,9 +6,9 @@ const redux = require("redux");
 /* ----------------------- reducer ---------------------- */
 // When we run this code for the first time,the reducer will also be executed with a default action, so to say, that should spit out the initial state.
 
-const counterReducer = (state, action) => {
+const counterReducer = (state = { counter: 0 }, action) => {
   return {
-    conter: state.counter + 1,
+    counter: state.counter + 1,
   };
 };
 
@@ -23,5 +23,11 @@ const store = redux.createStore(counterReducer);
 
 const counterSubscriber = () => {
   const latestState = store.getState();
-  console.log(latestState)
+  console.log(latestState);
 };
+
+// we  should make redux aware of  this subscriber  function and tell it that disfunction should be executed whenever our state changes.
+store.subscribe(counterSubscriber); // we dont execute counterSubscriber function, we are just pointing
+
+/* ------------------- dispact action ------------------- */
+store.dispatch({ type: "increment" });
