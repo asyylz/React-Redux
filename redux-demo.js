@@ -1,3 +1,11 @@
+// Redux isn't a library restricted to React, you can use Redux in any JavaScript project.
+
+// dispatching an action comes under declarative style of programming.
+
+// essentially dispatching an action to get something done and meanwhile you continue with your other code.
+
+// We don't describe exactly in the component itself how everything should work. Just managing everything in reducer which is directly in touch with store. 
+
 // We are importing redux
 const redux = require("redux");
 
@@ -7,9 +15,17 @@ const redux = require("redux");
 // When we run this code for the first time,the reducer will also be executed with a default action, so to say, that should spit out the initial state.
 
 const counterReducer = (state = { counter: 0 }, action) => {
-  return {
-    counter: state.counter + 1,
-  };
+  if (action.type === "increment") {
+    return {
+      counter: state.counter + 1,
+    };
+  }
+  if (action.type === "decrement") {
+    return {
+      counter: state.counter - 1,
+    };
+  }
+  return state;
 };
 
 /* -------------------- center store -------------------- */
@@ -30,4 +46,7 @@ const counterSubscriber = () => {
 store.subscribe(counterSubscriber); // we dont execute counterSubscriber function, we are just pointing
 
 /* ------------------- dispact action ------------------- */
+// dispatch is a method which dispatches an action.
+
 store.dispatch({ type: "increment" });
+store.dispatch({ type: "decrement" });
