@@ -5,19 +5,22 @@ const Counter = () => {
   // dispatch function, a function which we can call, which will dispatch an action against our Redux store.
   const dispatch = useDispatch();
 
-  const incrementHandler = () => {
-    dispatch({ type: "increment" });
-  };
-  const decrementHandler = () => {
-    dispatch({ type: "decrement" });
-  };
-
   // NOTES
   // When you use use selector, React Redux will automatically set up a subscription to the Redux store for this component.
 
   // If you ever would unmount this component if it would be removed from the DOM for whatever reason, React Redux would also automatically clear the subscription for you. So it manages that subscription for you behind the scenes.
 
   const counter = useSelector((state) => state.counter); // this function will be executed for us by React Redux.
+
+  const incrementHandler = () => {
+    dispatch({ type: "increment" });
+  };
+  const increaseHandler = () => { 
+    dispatch({ type: "increase", amount: 5 });
+  }
+  const decrementHandler = () => {
+    dispatch({ type: "decrement" });
+  };
 
   const toggleCounterHandler = () => {};
 
@@ -28,6 +31,7 @@ const Counter = () => {
       <div className="counter">
         <button onClick={incrementHandler}>Increment</button>
         <button onClick={decrementHandler}>Decrement</button>
+        <button onClick={increaseHandler}>Increase by 5</button>
       </div>
       <button onClick={toggleCounterHandler}>Toggle Counter</button>
     </main>
