@@ -21,6 +21,9 @@ const counterSlice = createSlice({
     },
   },
 });
+// Action payloads are very common and often needed. As you see, it's super easy to add them. It's just an extra property that you add to your action objects.
+
+// behind the scenes configureStore will emerge all those reducers into one big reducer.
 
 export const counterActions = counterSlice.actions;
 export default counterSlice.reducer;
