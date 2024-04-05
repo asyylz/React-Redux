@@ -11,23 +11,26 @@ const Counter = () => {
   // If you ever would unmount this component if it would be removed from the DOM for whatever reason, React Redux would also automatically clear the subscription for you. So it manages that subscription for you behind the scenes.
 
   const counter = useSelector((state) => state.counter); // this function will be executed for us by React Redux.
+  const show = useSelector((state) => state.showCounter);
 
   const incrementHandler = () => {
     dispatch({ type: "increment" });
   };
-  const increaseHandler = () => { 
+  const increaseHandler = () => {
     dispatch({ type: "increase", amount: 5 });
-  }
+  };
   const decrementHandler = () => {
     dispatch({ type: "decrement" });
   };
 
-  const toggleCounterHandler = () => {};
+  const toggleCounterHandler = () => {
+    dispatch({ type: "toggle" });
+  };
 
   return (
     <main className={classes.counter}>
       <h1>Redux Counter</h1>
-      <div className={classes.value}>{counter}</div>
+      {show && <div className={classes.value}>{counter}</div>}
       <div className="counter">
         <button onClick={incrementHandler}>Increment</button>
         <button onClick={decrementHandler}>Decrement</button>
