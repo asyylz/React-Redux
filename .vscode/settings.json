@@ -3,7 +3,7 @@
     {
       "pattern": {
         "type": "string",
-        "expression": "// NOTES",
+        "expression": "// NOTES:",
         "ignoreCase": false,
         "wholeMatch": false
       },
