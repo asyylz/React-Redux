@@ -11,14 +11,14 @@ const Counter = () => {
 
   // If you ever would unmount this component if it would be removed from the DOM for whatever reason, React Redux would also automatically clear the subscription for you. So it manages that subscription for you behind the scenes.
 
-  const counter = useSelector((state) => state.counter); // this function will be executed for us by React Redux.
-  const show = useSelector((state) => state.showCounter);
+  const counter = useSelector((state) => state.counter.counter); // this function will be executed for us by React Redux.
+  const show = useSelector((state) => state.counter.showCounter);
 
   const incrementHandler = () => {
     dispatch(counterActions.increment());
   };
   const increaseHandler = () => {
-    dispatch(counterActions.increase(5));
+    dispatch(counterActions.increase(10));
   };
   const decrementHandler = () => {
     dispatch(counterActions.decrement());

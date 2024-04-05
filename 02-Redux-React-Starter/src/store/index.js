@@ -1,11 +1,13 @@
-import { createStore } from "redux";
+
 import { createSlice, configureStore } from "@reduxjs/toolkit";
 
-const initialState = { counter: 0, showCounter: true };
+
+/* -------------------- Counter Slice ------------------- */
+const initialCounterState = { counter: 0, showCounter: true };
 
 const counterSlice = createSlice({
   name: "counter",
-  initialState,
+  initialState: initialCounterState,
   reducers: {
     increment(state) {
       state.counter++;
@@ -22,13 +24,35 @@ const counterSlice = createSlice({
   },
 });
 
+/* --------------------- Auth Slice --------------------- */
+const initialAuthState = {
+  isAuthenticated: false,
+};
+
+const authSlice= createSlice({
+  name: "authentication",
+  initialState: initialAuthState,
+  reducers: {
+    login(state) {
+      state.isAuthenticated = true;
+    },
+
+    logout(state) {
+      state.isAuthenticated = false;
+    },
+  },
+});
+
 // Action payloads are very common and often needed. As you see, it's super easy to add them. It's just an extra property that you add to your action objects.
 
 // behind the scenes configureStore will emerge all those reducers into one big reducer.
-const store = configureStore({ reducer: counterSlice.reducer });
+const store = configureStore({
+    reducer: { counter: counterSlice.reducer, auth: authSlice.reducer },
+  });
 
-// we alse export counter actions
+// we also export  actions
 export const counterActions = counterSlice.actions;
+export const authActions = authSlice.actions;
 export default store;
 
 // NOTES:
