@@ -1,0 +1,22 @@
+{
+  "textmarker.savedHighlights": [
+    {
+      "pattern": {
+        "type": "string",
+        "expression": "// NOTES",
+        "ignoreCase": false,
+        "wholeMatch": false
+      },
+      "color": "darkgoldenrod"
+    },
+    {
+      "pattern": {
+        "type": "string",
+        "expression": "/* ---------------- Class Based Componen ---------------- */",
+        "ignoreCase": false,
+        "wholeMatch": false
+      },
+      "color": "darkmagenta"
+    }
+  ]
+}
