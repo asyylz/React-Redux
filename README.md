@@ -24,16 +24,40 @@
         <h2>Getting Started</h2>
         <p>To get started with the repository, follow these steps:</p>
         <h3>Installation</h3>
-        <ol>
-            <li>Clone the repository to your local machine using the following command:</li>
-            <code>git clone https://github.com/your-username/react-redux-learning.git</code>
-            <li>Navigate to the project directory you choose:</li>
-            <code>cd react-redux-learning</code>
-            <li>Install project dependencies using npm:</li>
-            <code>npm install</code>
-            <li>Start the development server:</li>
-            <code>npm start</code>
-        </ol>
+    <ol>
+  <li>Clone the repository to your local machine using the following command:</li>
+  <div class="code-block">
+    <code>git clone https://github.com/your-username/react-redux-learning.git</code>
+    <button onclick="copyToClipboard('git clone https://github.com/your-username/react-redux-learning.git')">Copy</button>
+  </div>
+  <li>Navigate to the project directory you choose:</li>
+  <div class="code-block">
+    <code>cd react-redux-learning</code>
+    <button onclick="copyToClipboard('cd react-redux-learning')">Copy</button>
+  </div>
+  <li>Install project dependencies using npm:</li>
+  <div class="code-block">
+    <code>npm install</code>
+    <button onclick="copyToClipboard('npm install')">Copy</button>
+  </div>
+  <li>Start the development server:</li>
+  <div class="code-block">
+    <code>npm start</code>
+    <button onclick="copyToClipboard('npm start')">Copy</button>
+  </div>
+</ol>
+<script>
+  function copyToClipboard(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    alert('Code copied to clipboard!');
+  }
+</script>
+
     </section>
     <section>
         <h1>Resources</h1>
@@ -59,4 +83,5 @@
         <h2>License</h2>
         <p>This project is licensed under the MIT License.</p>
     </footer>
+
 </body>
