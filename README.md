@@ -14,11 +14,43 @@
         <ul>
             <li>Setting up Redux in a React application</li>
             <li>Creating Redux actions, reducers, and the store</li>
-            Managing state using Redux Toolkit
-            Asynchronous actions with Redux Thunk or Redux Saga
-            Combining multiple reducers
-            Best practices and advanced patterns in Redux
+            <li>Managing state using Redux Toolkit</li>
+            <li>Asynchronous actions with Redux Thunk or Redux Saga</li>
+            <li>Combining multiple reducers</li>
+            <li>Best practices and advanced patterns in Redux</li>
         </ul>
     </section>
-
+    <section id="getting-started">
+        <h2>Getting Started</h2>
+        <p>To get started with the repository, follow these steps:</p>
+        <h3>Installation</h3>
+        <ol>
+            <li>Clone the repository to your local machine using the following command:</li>
+            <code>git clone https://github.com/your-username/react-redux-learning.git
+        </code>
+            <li>Navigate to the project directory you choose:</li>
+            <code>cd react-redux-learning</code>
+            <li>Install project dependencies using npm:</li>
+            <code>npm install</code>
+            <li>Start the development server:</li>
+            <code>npm start</code>
+        </ol>
+    </section>
+    <section>
+        <h1>Resources</h1>
+        <ol>
+            <li> Redux Documentation</li>
+            <li>React Redux Documentation</li>
+            <li>Redux Toolkit Documentation</li>
+            <li>Redux Thunk Documentation</li>
+            <li> Redux Saga Documentation</li>
+        </ol>
+    </section>
+    <footer>
+        <h2>Contributing</h2>
+        <p>Contributions to the project are welcome! If you find any issues or have suggestions for improvements, please
+            feel free to open an issue or submit a pull request.</p>
+        <h2>License</h2>
+        <p>This project is licensed under the MIT License.</p>
+    </footer>
 </body>
