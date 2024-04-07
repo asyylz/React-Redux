@@ -26,8 +26,7 @@
         <h3>Installation</h3>
         <ol>
             <li>Clone the repository to your local machine using the following command:</li>
-            <code>git clone https://github.com/your-username/react-redux-learning.git
-        </code>
+            <code>git clone https://github.com/your-username/react-redux-learning.git</code>
             <li>Navigate to the project directory you choose:</li>
             <code>cd react-redux-learning</code>
             <li>Install project dependencies using npm:</li>
@@ -45,6 +44,13 @@
             <li>Redux Thunk Documentation</li>
             <li> Redux Saga Documentation</li>
         </ol>
+    </section>
+    <section class="notes">
+        <strong>
+            <h3>Notes:</h3>
+        </strong>
+        This project was created as part of an educational course on Udemy and is intended for learning purposes only.
+        All credit for the project idea and implementation goes to the course instructors and authors.
     </section>
     <footer>
         <h2>Contributing</h2>
