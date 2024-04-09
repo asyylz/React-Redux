@@ -40,8 +40,8 @@ const cartSlice = createSlice({
   },
 });
 
-/* ------------------- action creator ------------------- */
-const sendCartData = (cart) => {
+/* ------------------- action creator ------------------- */ // this way App.js component is leaner
+ export const sendCartData = (cart) => {
   return async (dispatch) => {
     dispatch(
       uiActions.showNotification({
@@ -62,7 +62,7 @@ const sendCartData = (cart) => {
     };
     try {
       await sendRequest();
-      
+
     } catch (error) {
       dispatch(
         uiActions.showNotification({
