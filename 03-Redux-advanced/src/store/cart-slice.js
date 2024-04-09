@@ -1,3 +1,4 @@
+
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialAmountState = { amount: 0, showCartItem: true };

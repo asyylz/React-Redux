@@ -1,10 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import amountReducer from "./amount.js";
-
+import uiSlice from "./ui-slice";
 
 const store = configureStore({
-  reducer: { amount: amountReducer },
+  reducer: { ui: uiSlice.reducer,}, // root reducer
 });
 
 export default store;
