@@ -9,7 +9,7 @@ const Cart = (props) => {
 
   return (
     <>
-      {show && (
+      {show && amount > 0 && (
         <Card className={classes.cart}>
           <h2>Your Shopping Cart</h2>
           <ul>

@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 
 const CartItem = (props) => {
   const dispatch = useDispatch();
+  
   const { title, quantity, total, price } = props.item;
 
   const incrementHandler = () => {
