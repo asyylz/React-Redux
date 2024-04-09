@@ -4,9 +4,8 @@ import { useDispatch } from "react-redux";
 
 const CartItem = (props) => {
   const dispatch = useDispatch();
-  
-  const { title, quantity, total, price } = props.item;
 
+  const { title, quantity, total, price } = props.item;
 
   return (
     <li className={classes.item}>
@@ -22,8 +21,8 @@ const CartItem = (props) => {
           x <span>{quantity}</span>
         </div>
         <div className={classes.actions}>
-          <button onClick={}>-</button>
-          <button onClick={incrementHandler}>+</button>
+          <button>-</button>
+          <button>+</button>
         </div>
       </div>
     </li>
