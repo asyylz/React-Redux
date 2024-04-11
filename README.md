@@ -39,8 +39,8 @@
         <h1>Resources</h1>
         <ol>
             <li><a href="https://redux.js.org/introduction/getting-started">Redux Documentation</a></li>
-            <li><a href="https://react-redux.js.org/introduction/getting-started"></a>React Redux Documentation</li>
-            <li><a href="https://redux-toolkit.js.org/introduction/getting-started"></a>Redux Toolkit Documentation</li>
+            <li><a href="https://react-redux.js.org/introduction/getting-started">React Redux Documentation</a></li>
+            <li><a href="https://redux-toolkit.js.org/introduction/getting-started">Redux Toolkit Documentation</a></li>
             <li><a href="https://redux.js.org/usage/writing-logic-thunks">Redux Thunk Documentation</a></li>
         </ol>
     </section>
