@@ -36,6 +36,11 @@
         </ol>
     </section>
     <section>
+        <h1>Outcome:
+            <p>Reach outcome site<a href="https://cartreduxredux.netlify.app/">here</a> </p>
+        </h1>
+    </section>
+    <section>
         <h1>Resources</h1>
         <ol>
             <li><a href="https://redux.js.org/introduction/getting-started">Redux Documentation</a></li>
