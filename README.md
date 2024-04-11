@@ -15,7 +15,7 @@
             <li>Setting up Redux in a React application</li>
             <li>Creating Redux actions, reducers, and the store</li>
             <li>Managing state using Redux Toolkit</li>
-            <li>Asynchronous actions with Redux Thunk or Redux Saga</li>
+            <li>Asynchronous actions with Redux Thunk</li>
             <li>Combining multiple reducers</li>
             <li>Best practices and advanced patterns in Redux</li>
         </ul>
@@ -38,11 +38,10 @@
     <section>
         <h1>Resources</h1>
         <ol>
-            <li> Redux Documentation</li>
-            <li>React Redux Documentation</li>
-            <li>Redux Toolkit Documentation</li>
-            <li>Redux Thunk Documentation</li>
-            <li> Redux Saga Documentation</li>
+            <li><a href="https://redux.js.org/introduction/getting-started">Redux Documentation</a></li>
+            <li><a href="https://react-redux.js.org/introduction/getting-started"></a>React Redux Documentation</li>
+            <li><a href="https://redux-toolkit.js.org/introduction/getting-started"></a>Redux Toolkit Documentation</li>
+            <li><a href="https://redux.js.org/usage/writing-logic-thunks">Redux Thunk Documentation</a></li>
         </ol>
     </section>
     <section class="notes">
