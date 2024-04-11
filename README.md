@@ -37,7 +37,7 @@
     </section>
     <section>
         <h1>Outcome</h1>
-        <p>Reach outcome site<a href="https://cartreduxredux.netlify.app/">here</a> </p>
+        <p>Reach outcome site <a href="https://cartreduxredux.netlify.app/">here</a> </p>
     </section>
     <section>
         <h1>Resources</h1>
